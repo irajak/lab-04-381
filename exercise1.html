@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 1</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+
+        // variable declaration
+        let myLetVariable = "Hello";
+        myLetVariable = "World"; // value reassigned
+        console.log(myLetVariable);
+
+        const myConstVariable = 10;
+        // myConstVariable = 20; // This causes an error due to reassignment
+        console.log(myConstVariable);
+
+        // string Operations
+        let string1 = "Hello, World!";
+        let string2 = "JavaScript is fun!";
+
+        // length of string1
+        console.log(string1.length);
+
+        // concatenate string1 and string2
+        console.log(string1 + " " + string2);
+
+        // replace "fun" with "awesome" in string2
+        console.log(string2.replace("fun", "awesome"));
+
+        // template string
+        let name = "Alice";
+        let age = 25;
+
+        // string using backticks
+        console.log(`My name is ${name} and I am ${age} years old`);
+
+        // working with dates
+        let currentDate = new Date();
+        console.log(currentDate);
+
+        // extract and log year
+        console.log(currentDate.getFullYear());
+
+        // extract and log  month (as a number)
+        console.log(currentDate.getMonth());
+
+        // extract and log day of the week (as a number)
+        console.log(currentDate.getDay());
+
+        // converts the day of the week to its name
+        let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        console.log(weekdays[currentDate.getDay()]);
+        
+    </script>
+</body>
+</html>

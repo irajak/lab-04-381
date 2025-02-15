@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 – Exercise 2</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        
+        // declaring functions
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        console.log(add(5, 3));
+        console.log(subtract(5, 3));
+
+        // default parameters
+        function add(a, b = 0) {
+            return a + b;
+        }
+
+        function subtract(a, b = 0) {
+            return a - b;
+        }
+
+        console.log(add(5));
+        console.log(subtract(5));
+
+        // arrow functions
+        const multiply = (a, b) => a * b;
+
+        const divide = (a, b) => {
+            if (b === 0) {
+                return "Cannot divide by zero";
+            }
+            return a / b;
+        };
+
+        console.log(multiply(5, 3));
+        console.log(divide(6, 2));
+        console.log(divide(5, 0));
+
+        // callback functions
+        function calculator(a, b, callback) {
+            return callback(a, b);
+        }
+
+        console.log(calculator(5, 3, add));
+        console.log(calculator(5, 3, multiply));
+
+    </script>
+</body>
+</html>
